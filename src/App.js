@@ -1,20 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import Increment from './Increment';
-import Input from './Input';
-import ColorButton from './ColorButton';
-import Threetask from './Threetask';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Cart from "./pages/Cart";
+import Navbar from "./components/navbar/Navbar";
+import Login  from "./pages/Login";
 function App() {
   return (
-   <div>
-{/* <Threetask/> */}
-    <Increment/>
-    <hr/>
-    <Input/>
-    <hr/>
-    <ColorButton/> 
-   </div>
+    <div className="App">
+  
+      <Navbar />
+      <Routes> 
+        <Route path="/" element={<Login/>}/>
+        <Route path="/home" element={<Homepage />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </div>
   );
 }
 
 export default App;
+
+
+
+
+

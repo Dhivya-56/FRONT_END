@@ -4,3 +4,14 @@
   width:500px;
   height: 300px;
 }
+.Navbar{
+display:flex;
+}
+.Links{
+  position: relative;
+  top:25px;
+  left:190px;
+}
+.head{
+  text-align: center;
+}
